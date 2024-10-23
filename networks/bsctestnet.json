@@ -1,0 +1,77 @@
+{
+  "Contracts": {
+    "Comptroller": "0x03B93e2C56865f3ab37A0a640ae08A8610D04541",
+    "Unitoller": "0x8b043D15d084Df5485C6755B9a71152Dd475E8E2",
+    "SimplePriceOracle": "0x09d414bbE3A230cD8dc0FAf5034C20286fBC52C2",
+    "WhitePaperInterestRateModel": "0xF06E7Ba8e8056c1Dce61553C87C50563Cd52FF85",
+    "JumpRateModelV2": "0x166dDd82B46975C3a6dc6d0954846a1db0962268",
+    "CErc20Delegate": "0x9E9E69Be305D05160eD76C67b78BAE13447F000a"
+  },
+  "Tokens": {
+    "COMP": {
+      "name": "Compound",
+      "symbol": "COMP",
+      "decimals": 18,
+      "address": "0x8c625b7c81c938141a7A76ED2a4275a6aa9E02D9"
+    },
+    "BNB": {
+      "name": "BNB",
+      "symbol": "tBNB",
+      "decimals": 18,
+      "address": "0x0000000000000000000000000000000000000000"
+    },
+    "EET": {
+      "address": "0x35C46b495C9798ACB508742Ae5830a9d8E5c774D",
+      "decimals": 18,
+      "name": "EET Token",
+      "symbol": "EET"
+    },
+    "USDT": {
+      "address": "0xA47a126d831c0D9068594027f693c8E520b4fFCE",
+      "decimals": 18,
+      "name": "USDT Token",
+      "symbol": "USDT"
+    }
+  },
+  "CTokenDelegate": {
+    "cUSDTDelegate": {
+      "address": "0x9E9E69Be305D05160eD76C67b78BAE13447F000a",
+      "contract": "CErc20Delegate",
+      "description": "Standard CErc20 Delegate"
+    },
+    "cEETDelegate": {
+      "address": "0x9E9E69Be305D05160eD76C67b78BAE13447F000a",
+      "contract": "CErc20Delegate",
+      "description": "Standard CErc20 Delegate"
+    }
+  },
+  "cTokens": {
+    "cUSDT": {
+      "contract": "CErc20Delegator",
+      "decimals": 18,
+      "initial_exchange_rate_mantissa": "20000000000000000",
+      "name": "COMP USDT",
+      "symbol": "cUSDT",
+      "underlying": "0xA47a126d831c0D9068594027f693c8E520b4fFCE",
+      "address": "0xD496F93d391750D3B170385c9A4E3Bc38e839c2F"
+    },
+    "cEET": {
+      "address": "0xf26a78cafd8a13AdEC02062Ad273AAd7D3b65B75",
+      "contract": "CErc20Delegator",
+      "decimals": 18,
+      "initial_exchange_rate_mantissa": "20000000000000000",
+      "name": "COMP EET",
+      "symbol": "cEET",
+      "underlying": "0x35C46b495C9798ACB508742Ae5830a9d8E5c774D"
+    },
+    "cBNB": {
+      "name": "COMPOUND BNB",
+      "symbol": "cBNB",
+      "decimals": 18,
+      "underlying": "",
+      "contract": "CEther",
+      "initial_exchange_rate_mantissa": "200000000000000000000000000",
+      "address": "0x14658affBFCA6DCB57B947ed54247664a04D4a9f"
+    }
+  }
+}
